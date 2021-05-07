@@ -1,18 +1,18 @@
+package ru.shapik.leet_code.sort;
+
 import java.util.Arrays;
 
-public class QuickSort {
+public class QuickSortArr {
     public static void quickSort(int[] array, int low, int high) {
         if (array.length == 0)
-            return;//завершить выполнение, если длина массива равна 0
+            return;
 
         if (low >= high)
-            return;//завершить выполнение если уже нечего делить
+            return;
 
-        // выбрать опорный элемент
         int middle = low + (high - low) / 2;
         int opora = array[middle];
 
-        // разделить на подмассивы, который больше и меньше опорного элемента
         int i = low, j = high;
         while (i <= j) {
             while (array[i] < opora) {
@@ -23,7 +23,7 @@ public class QuickSort {
                 j--;
             }
 
-            if (i <= j) {//меняем местами
+            if (i <= j) {
                 int temp = array[i];
                 array[i] = array[j];
                 array[j] = temp;
@@ -32,7 +32,6 @@ public class QuickSort {
             }
         }
 
-        // вызов рекурсии для сортировки левой и правой части
         if (low < j)
             quickSort(array, low, j);
 

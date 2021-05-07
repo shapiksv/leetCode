@@ -1,3 +1,5 @@
+import ru.shapik.leet_code.sort.QuickSortArr;
+
 public class MaxWidthOfVerticalArea {
 
     public static void main(String[] args) {
@@ -14,7 +16,7 @@ public class MaxWidthOfVerticalArea {
         for (int i = 0; i < points.length; i++) {
             width[i] = points[i][0];
         }
-        QuickSort.quickSort(width, 0, width.length -1);
+        QuickSortArr.quickSort(width, 0, width.length -1);
         int responce = 0;
         for (int i = 0; i < width.length -1; i++) {
             if (responce < width[i + 1] - width[i]) responce = width[i + 1] - width[i];
