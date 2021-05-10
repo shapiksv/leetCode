@@ -1,3 +1,5 @@
+package ru.shapik.leet_code.medium;
+
 import ru.shapik.leet_code.sort.QuickSortArr;
 
 public class MaxWidthOfVerticalArea {

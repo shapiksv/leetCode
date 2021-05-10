@@ -1,4 +1,4 @@
-import java.util.*;
+import ru.shapik.leet_code.medium.MaxWidthOfVerticalArea;
 
 public class LeetCode {
     public static void main(String[] args) {
