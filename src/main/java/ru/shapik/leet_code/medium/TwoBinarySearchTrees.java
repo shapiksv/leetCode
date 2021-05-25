@@ -41,5 +41,4 @@ public class TwoBinarySearchTrees {
             this.right = right;
         }
     }
-
 }
