@@ -1,2 +1,17 @@
-# Project exclude paths
-/target/
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+local.properties
+.settings/
+.loadpath
+.sqlxeditor_project/
+*.class
+*.iml
+.idea
+target/
+build/
+GeneratedBarFiles/
+.log
