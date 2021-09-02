@@ -1,8 +1,6 @@
 package ru.shapik.leet_code.algorithms;
 
-import ru.shapik.leet_code.data.TreeNode;
-
-import java.util.List;
+import ru.shapik.leet_code.data.Tree.TreeNode;
 
 public class ArrToTree {
 

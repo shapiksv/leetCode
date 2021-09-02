@@ -1,10 +1,8 @@
 package ru.shapik.leet_code.medium;
 
-import ru.shapik.leet_code.data.TreeNode;
+import ru.shapik.leet_code.data.Tree.TreeNode;
 
 import java.util.*;
-
-import static ru.shapik.leet_code.algorithms.ArrToTree.treeToArr;
 
 public class MaximumLevelSumOfBinaryTree {
     public static void main(String[] args) {

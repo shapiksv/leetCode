@@ -1,6 +1,6 @@
 package ru.shapik.leet_code.medium;
 
-import ru.shapik.leet_code.data.TreeNode;
+import ru.shapik.leet_code.data.Tree.TreeNode;
 
 import java.util.ArrayList;
 import java.util.HashMap;

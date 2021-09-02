@@ -1,6 +1,6 @@
 package ru.shapik.leet_code.medium;
 
-import ru.shapik.leet_code.data.TreeNode;
+import ru.shapik.leet_code.data.Tree.TreeNode;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -34,6 +34,16 @@ public class DeepestLeavesSum {
             else mapLevelValue.put(key, mapLevelValue.get(key) + root.val);
 
         }
+    }
+
+    public int deepestLeavesSum(TreeNode root, int level) {
+        if (root == null) return level;
+        ++level;
+        int left = deepestLeavesSum(root.left, level);
+        int right = deepestLeavesSum(root.right, level);
+        if (left > right) return left;
+        else return right;
+
     }
 
 }

@@ -4,22 +4,19 @@ import java.util.Arrays;
 
 public class QuickSortArr {
     public static void quickSort(int[] array, int low, int high) {
-        if (array.length == 0)
-            return;
-
-        if (low >= high)
+        if (array.length == 0 && low >= high)
             return;
 
         int middle = low + (high - low) / 2;
-        int opora = array[middle];
+        int pivot = array[middle];
 
         int i = low, j = high;
         while (i <= j) {
-            while (array[i] < opora) {
+            while (array[i] < pivot) {
                 i++;
             }
 
-            while (array[j] > opora) {
+            while (array[j] > pivot) {
                 j--;
             }
 

@@ -1,16 +1,15 @@
-package ru.shapik.leet_code.data;
-
-import ru.shapik.leet_code.medium.TwoBinarySearchTrees;
+package ru.shapik.leet_code.data.Tree;
 
 public class TreeNode {
     public int val;
     public TreeNode left;
     public TreeNode right;
+    public TreeNode parent;
 
     TreeNode() {
     }
 
-    TreeNode(int val) {
+    public TreeNode(int val) {
         this.val = val;
     }
 
@@ -19,4 +18,5 @@ public class TreeNode {
         this.left = left;
         this.right = right;
     }
+
 }

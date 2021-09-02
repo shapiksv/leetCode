@@ -1,6 +1,6 @@
 package ru.shapik.leet_code.medium;
 
-import ru.shapik.leet_code.data.TreeNode;
+import ru.shapik.leet_code.data.Tree.TreeNode;
 
 public class MaximumBinaryTree {
     public static void main(String[] args) {
